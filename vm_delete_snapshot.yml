@@ -14,7 +14,7 @@
         state: absent 
         snapshot_name: "{{ snapshot_name }}"
       delegate_to: localhost
-     register: vminfo
+      register: vminfo
 
     - debug:
         var: vminfo.virtual_machines

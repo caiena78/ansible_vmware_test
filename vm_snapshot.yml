@@ -14,7 +14,7 @@
         snapshot_name: "{{ snapshot_name }}"
         description: "{{ snap1_description }}"
       delegate_to: localhost
-     register: vminfo
+      register: vminfo
 
     - debug:
         var: vminfo.virtual_machines
